@@ -28,3 +28,5 @@ mongoose.connect(
 .catch((err) => console.log(err)); // Logs any errors that occur during the connection
 
 // RnGj0FHQWVFA11cp ( MongoDB Password )
+
+module.exports = app
