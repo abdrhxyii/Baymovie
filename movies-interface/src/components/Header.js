@@ -9,9 +9,9 @@ const Header = () => {
     const dispatch = useDispatch(); // for redux actions
 
     // Access the 'isLoggedIn' state from Redux store
-    const isLoggedIn = useSelector(state=> state.isLoggedIn);
+    const isLoggedIn = useSelector(state=> state.isLoggedIn);  // false 
 
-    return ( 
+    return (
     <AppBar position="sticky" sx={{ background: "#1d1160" }}>
       <Toolbar>
         <Typography variant="h5">Movies App</Typography>

@@ -8,7 +8,6 @@ const URL = "http://localhost:5000/movies";
 
 // Defining an asynchronous function to fetch movie data from the server
 const fetchHandler = async () => {
-
     // Using axios to make a GET request to the specified URL
     // and returning the data received from the server
     return await axios.get(URL).then((res) => res.data);

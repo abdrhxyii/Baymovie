@@ -17,7 +17,7 @@ const getAllMovies = async(req, res, next) => {
   // Validations
   // If movies are not found , return 404 status code 
   if (!movies) {
-    return re.status(404).json({message: "No movies found"})
+    return res.status(404).json({message: "No movies found"})
   }
   // If movies are found, return 200 status code with all the movies 
   return res.status(200).json({movies})

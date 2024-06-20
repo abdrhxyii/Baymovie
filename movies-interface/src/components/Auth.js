@@ -50,7 +50,6 @@ const Auth = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSnackbarOpen(false);
-
     try {
       if (isSignup) {
         // If in signup mode, send a signup request
@@ -90,7 +89,7 @@ const Auth = () => {
         marginTop={5}
         borderRadius={5}
         bgcolor="background.paper"
-      >
+      > 
         <Typography variant="h4" gutterBottom>
           {isSignup ? 'Sign Up' : 'Login'}
         </Typography>
@@ -148,5 +147,4 @@ const Auth = () => {
     </Container>
   );
 };
-
 export default Auth;

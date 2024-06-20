@@ -4,6 +4,7 @@ const router = express.Router();
 
 // Importing the User model and user controller
 const User = require('../model/User');
+
 const {getAllUser, signUp, login} = require("../controllers/user-controller");
 
 // Defining routes for user-related operations using user controller functions

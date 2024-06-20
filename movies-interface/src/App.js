@@ -14,31 +14,17 @@ function App() {
 
   return (
     <React.Fragment>
-
       <header>
-        {/* Navbar  */}
       <Header/>
       </header>
-
       <main>
-         {/* Define routes for different pages using React Router */}
         <Routes>
-          
-          {/* Route for the authentication page */}
-          <Route path="/auth" element={<Auth/>}/>
-
-          {/* Route for the movies page */}
+          <Route path="/" element={<Auth/>}/>
           <Route path="/movies" element={<Movies/>}/>
-
-          {/* Route for movie details page with dynamic ID where Update & Delete will be done */}
           <Route path="/movies/:id" element={<MovieDetails/>}/>
-
-          {/* Route for adding a new movie */}
           <Route path="/myMovies/add" element={<AddMovie/>}/>
-
         </Routes>
       </main>
-
     </React.Fragment>
   )
 }
