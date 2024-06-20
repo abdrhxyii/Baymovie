@@ -14,6 +14,10 @@ app.use(express.json()); // Parsing incoming JSON data
 app.use('/user', userRouter); // Using the userRouter for routes under '/user' path
 app.use('/movies', moviesRouter ); // Using the moviesRouter for routes under '/movies' path
 
+app.get('/', (req, res) => {
+    res.send('Hello, world!');
+});
+
 mongoose.connect(
     'mongodb+srv://admin:RnGj0FHQWVFA11cp@cluster0.0fmqc9v.mongodb.net/moviesdbms?retryWrites=true&w=majority'
 )
