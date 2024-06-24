@@ -1,5 +1,8 @@
 // Importing movie model 
 const Movie = require('../model/Movie');
+// const 
+
+
 
 // Function to get all the movies from the database
 const getAllMovies = async(req, res, next) => {
