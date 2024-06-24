@@ -39,7 +39,7 @@ const Header = () => {
              {/* Login and Signup buttons for non-authenticated users */}
             <Button
               component={Link}
-              to="/auth"
+              to="/"
               variant="contained"
               sx={{ marginX: 1, borderRadius: 10 }}
               color="warning"
@@ -48,7 +48,7 @@ const Header = () => {
             </Button>
             <Button
               component={Link}
-              to="/auth"
+              to="/"
               variant="contained"
               sx={{ marginX: 1, borderRadius: 10 }}
               color="warning"
@@ -62,7 +62,7 @@ const Header = () => {
           <Button
             onClick={() => dispatch(authActions.logout())}
             component={Link}
-            to="/auth"
+            to="/"
             variant="contained"
             sx={{ marginX: 1, borderRadius: 10 }}
             color="warning"

@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const cors = require('cors'); // importing cors to send req from backend to frontend
 const moviesRouter  = require("./routes/movies-routes");
@@ -14,13 +15,11 @@ app.use(express.json()); // Parsing incoming JSON data
 app.use('/user', userRouter); // Using the userRouter for routes under '/user' path
 app.use('/movies', moviesRouter ); // Using the moviesRouter for routes under '/movies' path
 
-app.get('/', (req, res) => {
-    res.send('Hello, world!');
-});
+// app.get('/', (req, res) => {
+//     res.send('Hello, world!');
+// });
 
-mongoose.connect(
-    'mongodb+srv://admin:RnGj0FHQWVFA11cp@cluster0.0fmqc9v.mongodb.net/moviesdbms?retryWrites=true&w=majority'
-)
+mongoose.connect(process.env.CONNECTION_STRING)
 
 .then(() => console.log("Connected to Database")) // indicating successful database connection
 
